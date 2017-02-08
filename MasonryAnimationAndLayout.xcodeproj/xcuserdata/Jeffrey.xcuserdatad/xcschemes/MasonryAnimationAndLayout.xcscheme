@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "00AD12A41E10C9CD002E152B"
+               BuildableName = "MasonryAnimationAndLayout.app"
+               BlueprintName = "MasonryAnimationAndLayout"
+               ReferencedContainer = "container:MasonryAnimationAndLayout.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "00AD12BD1E10C9CD002E152B"
+               BuildableName = "MasonryAnimationAndLayoutTests.xctest"
+               BlueprintName = "MasonryAnimationAndLayoutTests"
+               ReferencedContainer = "container:MasonryAnimationAndLayout.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "00AD12C81E10C9CD002E152B"
+               BuildableName = "MasonryAnimationAndLayoutUITests.xctest"
+               BlueprintName = "MasonryAnimationAndLayoutUITests"
+               ReferencedContainer = "container:MasonryAnimationAndLayout.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "00AD12A41E10C9CD002E152B"
+            BuildableName = "MasonryAnimationAndLayout.app"
+            BlueprintName = "MasonryAnimationAndLayout"
+            ReferencedContainer = "container:MasonryAnimationAndLayout.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "00AD12A41E10C9CD002E152B"
+            BuildableName = "MasonryAnimationAndLayout.app"
+            BlueprintName = "MasonryAnimationAndLayout"
+            ReferencedContainer = "container:MasonryAnimationAndLayout.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "00AD12A41E10C9CD002E152B"
+            BuildableName = "MasonryAnimationAndLayout.app"
+            BlueprintName = "MasonryAnimationAndLayout"
+            ReferencedContainer = "container:MasonryAnimationAndLayout.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
