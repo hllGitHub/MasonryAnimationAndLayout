@@ -54,7 +54,6 @@ static NSString *kCellId = @"kCellId";
         model.info = self.infoArray[i];
         [self.dataArray addObject:model];
     }
-    
 }
 
 - (void)setupSubViews {

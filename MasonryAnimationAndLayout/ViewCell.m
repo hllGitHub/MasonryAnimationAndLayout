@@ -35,22 +35,11 @@ static CGFloat titleFontSize = 18.f;
 
 @implementation ViewCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
-
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
         [self initView];
-        [self setupCostranins];
     }
     return self;
 }
@@ -94,11 +83,6 @@ static CGFloat titleFontSize = 18.f;
     }
 }
 
-+ (BOOL)requiresConstraintBasedLayout
-{
-    return YES;
-}
-
 - (void)setInfoStr:(NSString *)infoStr {
     _infoStr = infoStr;
     self.infoLabel.text = infoStr;
@@ -117,18 +101,19 @@ static CGFloat titleFontSize = 18.f;
         self.infoLabel.numberOfLines = 4;
         [self.expandButton setTitle:@"展开全文" forState:UIControlStateNormal];
     }
+    // 实际上是numberOfLines方法触发了draw方法，视图重新绘制了。
     
-    // 当高度不足时，隐藏button
-//    [self layoutIfNeeded];
-//    if (CGRectGetHeight(self.infoLabel.bounds) < (infoFontSize * 3 + 5) && self.model.expand == YES) {
-//        self.expandButton.hidden = YES;
-//    }
+    [self layoutIfNeeded];
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    [self setupCostranins];
 }
 
 - (void)setupCostranins {
     // 布局
-//    __weak typeof(self) weakSelf;
-    
     // titleLabel
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.offset(10);
